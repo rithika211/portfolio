@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Hospital Management System",
+    "imageSrc": "projects/project1.png",
+    "description": "Full-stack hospital management system with role-based dashboards for Admin, Doctor, and Patient. Built using React for frontend and FastAPI for backend.",
+    "skills": [
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "JWT"
+    ],
+    "source": "https://github.com/rithika211/Hospital-management-system"
+  },
+  {
+    "title": "Choose Your Own Adventure — AI Story Generator",
+    "imageSrc": "projects/project2.png",
+    "description": "Built a full-stack web app using FastAPI and React for interactive, branching storytelling.",
+    "skills": [
+      "FastAPI",
+      "React",
+      "SQLite",
+      "LangChain"
+    ],
+    "source": "https://github.com/rithika211/Choose-Your-Adventure--AI-Story-Generator"
+  }
+  ,
+  {
+    "title": "React Weather App",
+    "imageSrc": "projects/project3.png",
+    "description": "A simple and elegant weather application built with React that allows users to search for real-time weather information by city name.",
+    "skills": [
+      "React",
+      "Tailwind CSS",
+      "OpenWeatherMap API"
+    ],
+    "source": "https://github.com/rithika211/Weather-Application"
+  }
+]

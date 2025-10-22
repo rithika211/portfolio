@@ -1,0 +1,151 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  /* pushed down to give more space between About and Skills sections */
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* small extra gap between the section title and the content */
+  margin-top: 30px;
+}
+
+.skills {
+  width: 45%;
+  /* use grid so we can force exactly 4 items per row on desktop */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* reduced size so 4 icons fit comfortably */
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  /* ensure blend modes are isolated to this container */
+  isolation: isolate;
+}
+
+.skillImageContainer img {
+  max-width: 70%;
+  max-height: 70%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+.skill p {
+  font-size: 16px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.history {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.historyItem img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  padding: 6px;
+}
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+}
+
+.historyItemDetails h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.historyItemDetails p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.historyItemDetails ul {
+  margin-top: 6px;
+  list-style-position: outside;
+  font-size: 16px;
+  list-style-type: disc;
+  margin-left: 22px;
+  padding-left: 0;
+}
+
+.historyItemDetails ul li {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  /* responsive: switch to 3 columns on tablet/smaller screens */
+  .skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    justify-items: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+}

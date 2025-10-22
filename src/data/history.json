@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Associate Software Engineer (Intern)" ,
+    "organisation": "Accenture",
+    "startDate": "July, 2025",
+    "endDate": "Sept, 2025",
+    "experiences": [
+      "Completed a structured internship program focused on Java and Spring Framework",
+      "Worked on projects involving Core Java, Spring Boot, and Maven",
+      "Strengthened problem-solving and debugging skills through hands-on coding tasks"
+    ],
+    "imageSrc": "history/accenture.svg"
+  }
+]
