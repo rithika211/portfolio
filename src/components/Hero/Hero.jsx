@@ -11,8 +11,7 @@ export const Hero = () => {
         <p className={styles.description}>
           Full-stack developer focused on designing scalable, user-centered web
           applications. Experienced in backend development with strong frontend
-          integration skills. Eager to learn new technologies and contribute to
-          impactful projects.
+          integration skills.
         </p>
         <a href="mailto:rithikareddy00000@gmail.com" className={styles.contactBtn}>
           Contact Me
